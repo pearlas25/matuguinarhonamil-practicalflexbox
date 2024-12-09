@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox 3</title>
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    height: calc(100vh - 8px);
+    gap: 4px;
+}
+
+nav, main, aside, footer {
+    border: 1px solid black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.nav-left {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.nav-right1 {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.red-box1 {
+    background: red;
+    height: 30px;
+    width: 50px;
+}
+
+.red-box {
+    background: red;
+    height: 35px;
+    width: 35px;
+}
+
+.Main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 4px;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px;
+    height: 84vh;
+    
+}
+
+.aside-box{
+    display: flex;
+    border: 1px solid black;
+    height: 5vh;
+    width: 15vw;
+}
+
+.aside-box1 {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 15vw;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    padding: 4px;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    width: 12%;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 4px;
+    align-items: center;
+}
+
+.footer-box-left {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.footer-box-right {
+    display: flex;
+    flex-direction: row;
+    gap:4px;
+}
+
+.footer-box {
+    background: red;
+    height: 20px;
+    width: 20px;
+}
+</style>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="red-box"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+           
+        </div>
+        <div class="nav-right1">
+            <div class="red-box1"></div>
+            <div class="red-box1"></div>
+            <div class="red-box1"></div>
+            <div class="red-box1"></div>
+
+           
+        </div>
+    </nav>
+    <div class="Main-content">
+            <aside>
+                <div class="aside-box"></div>
+                <div class="aside-box"></div>
+                <div class="aside-box"></div>
+                <div class="aside-box"></div>
+                <div class="aside-box"></div>
+                <div class="aside-box"></div>
+                <div class="aside-box"></div>
+                <div class="aside-box"></div>
+                <div class="aside-box"></div>
+                <div class="aside-box"></div>
+    </aside>
+        <main>
+            <div class="main-box"></div>
+            <div class="main-box"></div>
+            <div class="main-box"></div>
+            <div class="main-box"></div>
+            <div class="main-box"></div>
+            <div class="main-box"></div>
+        </main>
+        <aside>
+            <div class="aside-box1"></div>
+            <div class="aside-box1"></div>
+            <div class="aside-box1"></div>
+        </aside>
+    </div>
+    
+    
+    
+            <footer>
+                <div class="footer-box-left">
+                    <div class="red-box"></div>
+                    <div class="footer-text">
+                        <div>FLEXBOX</div>
+                        <div>COPYRIGHT FLEXBOX</div>
+                    </div>
+                </div>
+        
+                <div class="footer-box-right">
+                    <div class="footer-box"></div>
+                    <div class="footer-box"></div>
+                    <div class="footer-box"></div>
+                    <div class="footer-box"></div>
+                    <div class="footer-box"></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

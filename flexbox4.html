@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox 4</title>
+
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    height: calc(100vh - 8px);
+    gap: 4px;
+}
+
+nav, main, aside, footer {
+    border: 1px solid black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.navleft {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.navright {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.redbox {
+    background: red;
+    height: 40px;
+    width: 40px;
+}
+
+.bluerectangle {
+    background: blue;
+    height: 25px;
+    width: 45px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 4px;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    padding: 4px;
+    gap: 4px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.mainbox {
+    width: 30%;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text {
+    text-align: center;
+}
+
+.mainbox1 {
+    height: 100%;
+    border: 1px solid black;
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px;
+}
+
+.asidebox {
+    display: flex;
+    border: 1px solid black;
+    width: 15vw;
+    height: 5vh;
+}
+
+footer {
+    padding: 4px;
+    gap: 4px;
+}
+
+.footertop{
+    align-items: center;
+    display: flex;
+    gap: 4px;
+}
+
+.footerbot {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.redboxes {
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+}
+.smallbox {
+    background: red;
+    height: 20px;
+    width: 20px;
+}
+
+.hr {
+    padding: 4px;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navleft">
+            <div class="redbox"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div class="navright">
+            <div class="bluerectangle"></div>
+            <div class="bluerectangle"></div>
+        </div>
+    </nav>
+    <div class="content">
+        <main>
+            <div class="mainbox">
+                <div class="text">Main Box 1</div>
+               <div class="mainbox1"></div>
+            </div>
+            <div class="mainbox">
+                <div class="text">Main Box 1</div>
+               <div class="mainbox1"></div>
+        </div>
+        </main>
+        <aside>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+        </aside>
+    </div>
+    <footer>
+        <div class="footertop">
+            <div class="redbox"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="footerbot">
+            <div class="redboxes">
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+            </div>
+            <div class="text">
+                <p>@Copyright All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
